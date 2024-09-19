@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Completa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            border: 2px solid black;
+            display: inline-block;
+            padding: 20px;
+        }
+        input[type="number"] {
+            padding: 10px;
+            margin: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+        }
+        .result {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input id="numero1" type="number" placeholder="Digite um número">
+        <input id="numero2" type="number" placeholder="Digite um número">
+        <br>
+        <button data-operacao="+">+</button>
+        <button data-operacao="-">-</button>
+        <button data-operacao="*">*</button>
+        <button data-operacao="/">/</button>
+        <br>
+        <button id="confirmar-btn">CONFIRMAR</button>
+        <div class="result">
+            RESULTADO: <span id="resultado">0</span>
+        </div>
+    </div>
+
+    <script src="calculadora.js"></script>
+</body>
+</html>
